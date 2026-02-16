@@ -657,6 +657,20 @@ h2 {
   color: var(--text);
 }
 
+/* === Security Note === */
+.security-note {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
 /* === Cal.com Embed === */
 .cal-embed-wrapper {
   max-width: 800px;
