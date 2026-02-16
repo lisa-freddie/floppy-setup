@@ -591,6 +591,81 @@ h2 {
   margin-top: 8px;
 }
 
+/* === Comparison Grid === */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.compare-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.compare-card-us {
+  border-color: var(--accent);
+  box-shadow: 0 0 40px rgba(255, 107, 53, 0.08);
+}
+
+.compare-label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  padding: 4px 12px;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.compare-them {
+  color: var(--text-dim);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.compare-us {
+  color: var(--accent);
+  background: var(--accent-subtle);
+}
+
+.compare-list {
+  list-style: none;
+}
+
+.compare-list li {
+  padding: 10px 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.compare-list li:last-child {
+  border-bottom: none;
+}
+
+.compare-card-us .compare-list li {
+  color: var(--text);
+}
+
+/* === Cal.com Embed === */
+.cal-embed-wrapper {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  min-height: 500px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
 /* === Responsive === */
 @media (max-width: 768px) {
   .section {
